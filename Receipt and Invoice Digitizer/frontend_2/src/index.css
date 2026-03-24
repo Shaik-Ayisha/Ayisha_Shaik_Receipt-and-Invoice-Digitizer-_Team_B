@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --card-bg: #ffffff;
+  --text-color: #1f2937;
+  --border-color: #d1d5db;
+  /* Darker border for light mode */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg,
+      #4f46e5 0%,
+      #6366f1 35%,
+      #7c3aed 70%,
+      #9333ea 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Root container */
+#root {
+  min-height: 100vh;
+}
+
+/* Page layout */
+.page-wrapper {
+  padding: 30px;
+}
+
+.page-content {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Glow effects */
+body::before {
+  content: "";
+  position: fixed;
+  top: -150px;
+  left: -150px;
+  width: 500px;
+  height: 500px;
+  background: rgba(124, 58, 237, 0.35);
+  filter: blur(140px);
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: -150px;
+  right: -150px;
+  width: 500px;
+  height: 500px;
+  background: rgba(79, 70, 229, 0.35);
+  filter: blur(140px);
+  z-index: -1;
+}
+
+/* Code font */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  --background-color: #1f1f1f;
+  --card-bg: #2b2b2b;
+  --text-color: #f5f5f5;
+  --border-color: rgba(255, 255, 255, 0.12);
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+body.dark-mode::before,
+body.dark-mode::after {
+  display: none;
+}
+
+body.dark-mode .dashboard-container {
+  background: #2b2b2b;
+}
+
+body.dark-mode .sidebar {
+  background-color: #383838;
+  border-right-color: #444;
+}
+
+body.dark-mode .sidebar li {
+  color: #d1d5db;
+}
+
+body.dark-mode .sidebar li:hover,
+body.dark-mode .sidebar .active {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+body.dark-mode .main-content {
+  color: #f5f5f5;
+}
+
+body.dark-mode .section-title,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p {
+  color: #f5f5f5;
+}
+
+body.dark-mode .card,
+body.dark-mode .upload-box,
+body.dark-mode .recent-docs,
+body.dark-mode .chart-card,
+body.dark-mode .digitization-section,
+body.dark-mode .step-card,
+body.dark-mode .analysis-card,
+body.dark-mode .invoice-template,
+body.dark-mode .invoice-modal-content {
+  background-color: #383838;
+  border-color: #444;
+  color: #f5f5f5;
+}
+
+body.dark-mode .upload-box {
+  background-color: #444;
+  border-color: #555;
+}
+
+body.dark-mode .analysis-section {
+  background-color: #383838;
+}
+
+body.dark-mode table th {
+  background-color: #444;
+  color: #d1d5db;
+  border-color: #555;
+}
+
+body.dark-mode table td {
+  border-color: #555;
+  color: #f5f5f5;
+}
+
+body.dark-mode .recent-docs tbody tr:hover td {
+  background-color: #444;
+}
+
+body.dark-mode .settings-section {
+  background-color: #383838;
+  border-color: #444;
+}
+
+body.dark-mode .settings-select {
+  background-color: #444;
+  border-color: #555;
+  color: #f5f5f5;
+}
+
+/* Invoice Details Dark Mode Overrides */
+body.dark-mode .document-panel,
+body.dark-mode .data-panel .card {
+  background-color: #383838;
+  color: #f5f5f5;
+  border: 1px solid #444;
+}
+
+body.dark-mode .data-panel .field-row {
+  border-bottom: 1px solid #444;
+}
+
+body.dark-mode .verified {
+  background-color: rgba(79, 70, 229, 0.25) !important;
+  border-left-color: #22c55e !important;
+  color: #f5f5f5 !important;
+}
+
+body.dark-mode .doc-preview {
+  background-color: #2b2b2b;
+}
+
+body.dark-mode .data-panel input {
+  background-color: #444;
+  color: #f5f5f5;
+  border: 1px solid #555;
+}

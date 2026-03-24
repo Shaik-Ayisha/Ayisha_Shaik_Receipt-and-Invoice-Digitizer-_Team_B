@@ -1,0 +1,80 @@
+.settings-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.settings-section {
+  padding: 32px;
+  background-color: var(--card-bg, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color, rgba(229, 231, 235, 0.5));
+}
+
+.settings-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.settings-group:last-child {
+  margin-bottom: 0;
+}
+
+.settings-group label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--label-color, #374151);
+  margin-bottom: 8px;
+}
+
+.settings-select {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color, #d1d5db);
+  background-color: var(--input-bg, #ffffff);
+  color: var(--text-color, #111827);
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.settings-select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.settings-hint {
+  font-size: 13px !important;
+  color: var(--hint-color, #6b7280) !important;
+  margin: 8px 0 0 0 !important;
+  font-weight: 400 !important;
+}
+
+/* Base override for Dashboard Container inside settings to prevent active conflicts */
+.settings-page .sidebar .sidebar-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* SETTINGS PAGE HEADER COLOR */
+
+.settings-page .page-header h1 {
+  color: #c6c6ed;
+}
+
+.settings-page .page-header p {
+  color: #c6c6ed;
+}
+
+.settings-page .page-header h1 {
+  color: #c6c6ed;
+}
+
+.settings-page .page-header p {
+  color: #c6c6ed;
+}
