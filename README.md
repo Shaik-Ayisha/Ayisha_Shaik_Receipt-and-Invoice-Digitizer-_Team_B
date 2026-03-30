@@ -1,24 +1,21 @@
 # 📄 Receipt and Invoice Digitizer
 
-The **Receipt and Invoice Digitizer** is a web-based application that automatically converts handwritten or printed receipts into structured digital data. The system uses **OCR (Optical Character Recognition)** to extract key details from receipt images and store them in a digital format for easy management and retrieval. 
+The **Receipt and Invoice Digitizer** is a web-based application that converts handwritten or printed receipts into structured digital data. It uses **OCR (Optical Character Recognition)** to extract key details from receipt images and store them for easy management and retrieval.
 
 This project was developed as part of the **Infosys Springboard Virtual Internship 6.0**.
 
+## 🎯 Project Objective
 
-# 🎯 Project Objective
-
-The objective of this project is to reduce manual data entry by automatically extracting important information from receipts and invoices such as:
+The goal of this project is to reduce manual data entry by automatically extracting important information from receipts and invoices such as:
 
 * Vendor Name
 * Purchase Date
 * Items Purchased
 * Total Amount
 
-The system also provides an **admin dashboard** to manage uploaded receipts and a **chatbot** that helps users interact with the system. 
+The system also includes an **admin dashboard** and a **chatbot** for better interaction and management.
 
-
-
-# 🚀 Features
+## 🚀 Features
 
 * 📤 Upload receipts and invoices
 * 🔍 OCR-based text extraction using **Tesseract OCR**
@@ -30,9 +27,7 @@ The system also provides an **admin dashboard** to manage uploaded receipts and 
 * 🔐 Secure login with JWT authentication
 * 📂 Organized storage of digitized receipts
 
-
-
-# 🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 ### Frontend
 
@@ -52,78 +47,54 @@ The system also provides an **admin dashboard** to manage uploaded receipts and 
 ### AI & OCR
 
 * Tesseract OCR
-* NLP using NLTK
+* NLTK
 
-### Other Tools
+### Tools
 
-* Postman (API testing)
-* GitHub (version control)
-* VS Code (development environment)
+* Postman
+* GitHub
+* VS Code
 
+## ⚙️ System Architecture
 
+1. User uploads a receipt image
+2. Backend API receives the image
+3. Tesseract OCR extracts text
+4. Text is processed into structured data
+5. Data is stored in SQLite
+6. Dashboard displays results
+7. Chatbot assists users
 
-# ⚙️ System Architecture
-
-1. User uploads a receipt image.
-2. Backend API receives the image.
-3. Tesseract OCR extracts text from the image.
-4. Extracted text is processed and converted into structured data.
-5. Data is stored in the SQLite database.
-6. Admin dashboard displays the digitized receipts.
-7. Chatbot assists users with queries.
-
-
-
-# 📂 Project Structure (Example)
+## 📂 Project Structure
 
 ```
 receipt-invoice-digitizer
 │
 ├── backend
-│   ├── main.py
-│   ├── ocr_processing.py
-│   ├── database.py
-│
 ├── frontend
-│   ├── src
-│   ├── components
-│   ├── pages
-│
+├── frontend_2
 ├── assets
 ├── README.md
 └── requirements.txt
-
-
-# ▶️ Installation and Setup
-
-### 1️⃣ Clone the Repository
 ```
+
+## ▶️ Installation and Setup
+
+### 1. Clone the Repository
+
 ```bash
-git clone <your-repository-link>
+git clone https://github.com/Shaik-Ayisha/Ayisha_Shaik_Receipt-and-Invoice-Digitizer-_Team_B.git
 cd receipt-invoice-digitizer
 ```
 
-
-
-### 2️⃣ Backend Setup
-
-Install dependencies:
+### 2. Backend Setup
 
 ```bash
 pip install -r requirements.txt
-```
-
-Run the backend server:
-
-```bash
 uvicorn main:app --reload
 ```
 
-
-
-### 3️⃣ Frontend Setup
-
-Navigate to frontend folder:
+### 3. Frontend Setup (Primary UI)
 
 ```bash
 cd frontend
@@ -131,63 +102,49 @@ npm install
 npm start
 ```
 
+### 4. Frontend_2 Setup (Alternative UI)
 
+```bash
+cd frontend_2
+npm install
+npm start
+```
 
-# 📸 Application Workflow
+## 📸 Application Workflow
 
-1. Open the landing page.
-2. Login using credentials or Google authentication.
-3. Upload a receipt or invoice image.
-4. System extracts data using OCR.
-5. Extracted information is displayed in the dashboard.
-6. Admin can manage and monitor uploaded receipts.
+1. Open the application
+2. Login
+3. Upload receipt/invoice
+4. OCR extracts data
+5. View results in dashboard
+6. Manage receipts
 
+## ⚠️ Challenges Faced
 
+* OCR accuracy for handwritten receipts
+* Different receipt formats
+* Poor image quality
+* Structuring raw OCR output
+* Full-stack integration
 
-# ⚠️ Challenges Faced
+## 📚 Skills Gained
 
-* OCR accuracy issues with handwritten receipts
-* Different receipt formats and layouts
-* Poor image quality affecting text extraction
-* Structuring raw OCR text into meaningful fields
-* Integrating frontend, backend, and database
-* Designing an intuitive user interface 
+* OCR with Python
+* FastAPI backend development
+* React frontend development
+* Database integration
+* Debugging and testing
 
+## 👩‍💻 Author
 
+**Ayisha Shaik**
 
-# 📚 Skills & Learning
+## Acknowledgements
 
-Through this project we learned:
+Thanks to **Infosys Springboard** and mentor **Shakthi GopalKrishnan** for guidance and support.
 
-* OCR implementation using Python
-* API development using FastAPI
-* Full-stack development with React and Python
-* Database design and integration
-* Chatbot integration
-* Testing and debugging
-* Team collaboration and project management 
+## 📌 Internship Details
 
-
-
-# 👥 Team Members
-
-* Shaik Ayisha
-* Srusti Yaligar
-* Leela Krishna Kondapaturi
-
-
-
-# Acknowledgements
-
-We would like to thank **Infosys Springboard** for providing this internship opportunity and our mentor **Shakthi GopalKrishnan** for their guidance and support throughout the project.
-
-
-
-# 📌 Internship Details
-
-* **Program:** Infosys Springboard Virtual Internship 6.0
-* **Project:** Receipt and Invoice Digitizer
-* **Duration:** 8 Weeks
-
-
-
+* Program: Infosys Springboard Virtual Internship 6.0
+* Project: Receipt and Invoice Digitizer
+* Duration: 8 Weeks
