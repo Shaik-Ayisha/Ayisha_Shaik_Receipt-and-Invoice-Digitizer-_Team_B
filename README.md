@@ -1,4 +1,3 @@
-
 # 📄 Receipt and Invoice Digitizer
 
 The **Receipt and Invoice Digitizer** is a web-based application that automatically converts handwritten or printed receipts into structured digital data. The system uses **OCR (Optical Character Recognition)** to extract key details from receipt images and store them in a digital format for easy management and retrieval. 
@@ -189,5 +188,6 @@ We would like to thank **Infosys Springboard** for providing this internship opp
 * **Program:** Infosys Springboard Virtual Internship 6.0
 * **Project:** Receipt and Invoice Digitizer
 * **Duration:** 8 Weeks
+
 
 
